@@ -1,0 +1,226 @@
+﻿
+@model IEnumerable<TCLrandom.Models.DS_QuayThuong>
+@{
+    /**/
+
+    ViewBag.Title = "WinnerList";
+    Layout = "~/Views/Shared/_LayoutTCL.cshtml";
+    int StartIndex = 0;
+    IEnumerable<TCLrandom.Models.DS_QuayThuong> newlist1 = ViewBag.newslist1;
+    IEnumerable<TCLrandom.Models.DS_QuayThuong> newlist2 = ViewBag.newslist2;
+
+}
+
+<style>
+
+    img {
+        width: 100%;
+        /*    margin-left: -60px;*/
+        margin: auto;
+    }
+
+    .btn-spin {
+        text-align: center;
+    }
+
+        .btn-spin img {
+            margin-top: 0px !important;
+        }
+
+    .table-main {
+        margin: auto;
+    }
+
+        .table-main td {
+            padding-top: 10px;
+            text-align: left;
+        }
+
+        .table-main tr {
+            margin-top: 10px;
+        }
+
+        .table-main tbody {
+            background-color: transparent !important;
+        }
+
+    td {
+        color: red;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    p {
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        background-color: #f2f2f2;
+        display: inline-block;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+
+    input {
+        text-align: center;
+        margin-left: 10px;
+        width: 35px;
+        border-radius: 5px;
+        border: 2px;
+        height: 35px;
+    }
+
+    .h3 {
+        padding-top: 5px;
+        text-align: center;
+        color: red;
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .table-content {
+        width: 50%;
+        margin: auto;
+    }
+
+        .table-content td {
+            border: 1px solid white;
+            text-align: center;
+            background-color: red;
+            color: white;
+            font-size: 14px;
+        }
+
+        .table-content th {
+            width: 30px;
+            border: 1px solid red;
+            font-size: 14px;
+            background-color: yellow;
+            text-align: center;
+        }
+
+            .table-content th:first-child {
+                border-left: none;
+            }
+
+            .table-content th:last-child {
+                border-right: none;
+            }
+
+        .table-content tr:first-child td {
+            border-top: none;
+        }
+
+        .table-content td:first-child {
+            border-left: none;
+        }
+
+        .table-content td:last-child {
+            border-right: none;
+        }
+</style>
+<div>
+    <img src="~/image/ImageDH/title.jpg" />
+</div>
+<div class="row">
+    <form id="myform" method="post">
+        <fieldset>
+            <div class="form-group" style="display:none;">
+                <input type="text" name="giaithuong" id="giaithuong" value="0">
+            </div>
+            <div class="btn-spin form-group">
+                <button id="btnSend" type="button">
+                    <img src="~/image/ImageDH/button.jpg" alt="" class="img-responsive" />
+                </button>
+            </div>
+        </fieldset>
+        <table class="table-main">
+            <tr>
+                <td>Lần quay:</td>
+                @*<td><input type="text" /></td>*@
+                <td><p id="solan"></p></td>
+            </tr>
+            <tr>
+                <td>Mã trúng thưởng:</td>
+                @*<td><input type="text" id="code0" name="code0"/><input type="text" name="code1" id="code1" /><input type="text" name="code2" id="code2"/><input type="text" name="code3" id="code3"/><input type="text" name="code4" id="code4"/><input type="text"name="code5"id="code5" /><input type="text"name="code6" id="code6" /><input type="text"name="code7" id="code7"/><input type="text"name="code8" id="code8" /><input type="text"name="code9" id="code9" /></td>*@
+                <td><p id="code0"></p><p id="code1"></p><p id="code2"></p><p id="code3"></p><p id="code4"></p><p id="code5"></p><p id="code6"></p></td>
+            </tr>
+            <tr>
+                <td>Số điện thoại:</td>
+                @*<td><input type="text" /><input type="text" /><input type="text" /><input type="text" /><input type="text" /><input type="text" /><input type="text" /><input type="text" /><input type="text" /><input type="text" /><input type="text" /></td>*@
+                <td><p id="phone0"></p><p id="phone1"></p><p id="phone2"></p><p id="phone3"></p><p id="phone4"></p><p id="phone5"></p><p id="phone6"></p><p id="phone7"></p><p id="phone8"></p><p id="phone9"></p> </td>
+
+            </tr>
+        </table>
+    </form>
+    <div class="h3">
+        <h3><b>DANH SÁCH MÃ SỐ VÀ SỐ ĐIỆN THOẠI TRÚNG THƯỞNG</b></h3>
+    </div>
+
+    <table class="table-content" id="table-content1">
+        <thead>
+            <tr>
+                <td>STT</td>
+                <td>MÃ TRÚNG THƯỞNG</td>
+                <td>SỐ ĐIỆN THOẠI</td>
+            </tr>
+            <tr>
+                <td colspan="3">MÃ CHÍNH THỨC</td>
+
+            </tr>
+        </thead>
+
+
+        <tbody>
+            @if (Model != null)
+            {
+                foreach (var item1 in newlist1)
+                {
+                    StartIndex++;
+                    <tr>
+                        <th style="text-align:center;">@StartIndex</th>
+                        <th>@item1.Code</th>
+                        <th>@item1.Phone</th>
+
+                    </tr>
+                }
+
+            }
+
+
+
+        </tbody>
+
+
+
+    </table>
+    <table class="table-content" id="table-content2">
+        <thead>
+            <tr>
+                <td colspan="3">MÃ DỰ PHÒNG</td>
+
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+
+                foreach (var item2 in newlist2)
+                {
+                    StartIndex++;
+
+                    <tr>
+
+                        <th style="text-align:center;">@StartIndex</th>
+                        <th>@item2.Code</th>
+                        <th>@item2.Phone</th>
+
+                    </tr>
+
+                }
+            }
+        </tbody>
+
+    </table>
+
+</div>

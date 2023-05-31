@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    @*<link href="~/Content/StyleSheet1.css" rel="stylesheet" />*@
+
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @*<script>
+        window.onload = function () {
+            var el = document.querySelectorAll("span[id*=digit]");
+            for (i = 0; i < el.length; i++) {
+                el[i].classList.toggle('animate');
+            }
+        }
+    </script>*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>

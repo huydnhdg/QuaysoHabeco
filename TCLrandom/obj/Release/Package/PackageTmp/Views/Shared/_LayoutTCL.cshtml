@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HABECO - Quay số trúng thưởng</title>
+    @*<link rel="shortcut icon" href="~/image/logolc.png" type="image/x-icon">
+        <link rel="icon" href="~/image/logolc.png" type="image/x-icon">*@
+    @*<link rel="icon" type="image/png" href="https://theme.hstatic.net/1000195956/1000323722/14/favicon.png?v=298">*@
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/hover-min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.css">
+    <style>
+        body {
+            background-image:url( /image/ImageDH/banner.jpg);
+            width:100%;
+            background-size:cover;
+            background-repeat: no-repeat;
+
+        }
+        @@media(max-width:1366px)and (min-width:1024px) {
+            body {
+                width: 100%;
+            }
+            main {
+               margin-top: -90px;
+                transform: scale(0.7, 0.7);
+            }
+        }
+        @@media(max-width:1440px)and (min-width:1366px) {
+            body {
+                width: 100%;
+            }
+
+            main {
+                margin-top: -60px;
+                transform: scale(0.8, 0.8);
+            }
+        }
+    </style>
+</head>
+<body >
+   
+    <main >
+        <div class="body-content container" >
+            @RenderBody()
+            <!-- Modal -->
+
+        </div>
+    </main>
+
+    @*<footer>
+            <div class="footer container" style="">
+                <h1><marquee scrollamount="8">Chương trình QUAY SỐ TRÚNG THƯỞNG _ <i>CUỒNG NHIỆT WORLD CUP CÙNG LANCHI MART</i> _ <i>Chi tiết liên hệ Hotline: 0916.603.888</i></marquee></h1>
+            </div>
+        </footer>*@
+    @Scripts.Render("~/bundles/jquery")
+    <script type="text/javascript"
+            src="http://code.jquery.com/jquery-latest.js">
+    </script>
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+ 
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="~/Scripts/jquery.animateNumber.min.js"></script>
+    <script src="~/Scripts/quayso.js"></script>
+    <script src="~/Scripts/reset.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

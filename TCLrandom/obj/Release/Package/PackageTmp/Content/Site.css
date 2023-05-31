@@ -1,0 +1,577 @@
+﻿body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    /*white-space: normal;*/
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    /*max-width: 280px;*/
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+header {
+    background-color: #cc0101;
+    overflow: hidden;
+    /*position: fixed;*/
+    width: 100%;
+    top: 0;
+}
+
+.navbar {
+    background-color: #cc0101;
+}
+
+nav {
+    margin: 0;
+}
+
+    nav ul li {
+        float: left;
+        text-align: center;
+        position: relative;
+    }
+
+.navbar ul li a {
+    color: white !important;
+    font-weight: bold;
+}
+
+    .navbar ul li a:hover {
+        color: white !important;
+    }
+
+nav ul li img {
+    width: 150px;
+}
+
+/*nav ul li div {
+    height: 90px;
+    width: 250px;
+    margin-left: -20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(to left, transparent, #ec1414);
+    background: -moz-linear-gradient(left, transparent, #ec1414);
+    background: -webkit-linear-gradient(left, transparent, #ec1414);
+    background: -o-linear-gradient(left, transparent, #ec1414);
+    display: grid;
+    align-items: center;
+}*/
+
+nav ul li div:hover {
+    /*background: linear-gradient(to left, white, white);
+            background: -moz-linear-gradient(left, white, white);
+            background: -webkit-linear-gradient(left, white, white);
+            background: -o-linear-gradient(left, white, white);*/
+}
+
+.navbar ul li a:focus {
+    color: #cc0101 !important;
+    text-decoration: none;
+    border: none;
+}
+
+    .navbar ul li a:focus div {
+        background: linear-gradient(to left, white, white);
+        background: -moz-linear-gradient(left, white, white);
+        background: -webkit-linear-gradient(left, white, white);
+        background: -o-linear-gradient(left, white, white);
+        border: none;
+    }
+
+.navbar {
+    border: none;
+    margin: 0;
+}
+
+.navbar-collapse.collapse {
+    padding: 0;
+}
+
+.nav > li > a {
+    padding: 0 !important;
+}
+
+footer {
+    background-color: #bb0101;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer {
+    /*padding-top: 10px;
+    padding-bottom: 10px;*/
+}
+
+    .footer h1 {
+        margin: 0;
+    }
+
+    .footer marquee {
+        text-align: center;
+        color: white;
+        margin: 0;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+body {
+    /*background-color: #f4dede;*/
+}
+
+.main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+    .content p {
+        text-align: justify;
+    }
+
+.cocaugiai th {
+    text-align: center;
+}
+
+.cocaugiai td {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.align-justify {
+    text-align: justify !important;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #e46363;
+}
+
+.table {
+    border: 1px solid #e46363;
+}
+
+.padding-left {
+    padding-left: 30px;
+}
+
+.chinhanh {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.title {
+    background: -moz-radial-gradient(center center, circle farthest-corner, #ffffff 0%, #f9a4a4 100%);
+    background: -o-radial-gradient(center center, circle farthest-corner, #ffffff 0%, #f9a4a4 100%);
+    background: -ms-radial-gradient(center center, circle farthest-corner, #ffffff 0%, #f9a4a4 100%);
+    background: -webkit-radial-gradient(center center, circle farthest-corner, #ffffff 0%, #f9a4a4 100%);
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.group-title {
+    width: 100%;
+    background-color: white;
+    padding: 30px 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+    .group-title p {
+        font-weight: bold;
+        text-align: center;
+        font-size: 28px;
+    }
+
+        .group-title p span {
+            color: #bb0101;
+        }
+
+.spin-list {
+    padding: 20px 0;
+}
+
+.winner thead {
+    background-color: #bb0101;
+}
+
+    .winner thead th {
+        color: white;
+    }
+
+.winner th, td {
+    text-align: center;
+}
+
+.time div {
+    padding: 0;
+}
+
+.content-time {
+    padding-left: 50px !important;
+    padding-right: 100px !important;
+}
+
+    .content-time p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+.img-time img {
+    padding-top: 30px;
+}
+
+.spin-title h2 {
+    text-align: center;
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+}
+
+.spin {
+    padding: 50px 0px;
+    overflow: hidden;
+}
+
+.baocode {
+    padding-top: 20px;
+}
+
+.spin .code {
+    border-style: dashed;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px dashed #f86f4c;
+    width: 160px;
+    margin: 0 auto;
+}
+
+    .spin .code p {
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+        margin: 5px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        background: -moz-radial-gradient(center center, circle farthest-corner, #fc7b56 0%, #ce1c12 100%);
+        background: -o-radial-gradient(center center, circle farthest-corner, #fc7b56 0%, #ce1c12 100%);
+        background: -ms-radial-gradient(center center, circle farthest-corner, #fc7b56 0%, #ce1c12 100%);
+        background: -webkit-radial-gradient(center center, circle farthest-corner, #fc7b56 0%, #ce1c12 100%);
+    }
+
+.btn-spin button {
+    background-color: transparent;
+    border: none;
+}
+
+    .btn-spin button:focus {
+        outline-color: transparent;
+    }
+
+.btn-spin img {
+    /*width: 65%;
+    margin-top: -15px;*/
+    margin-top:50px;
+}
+
+.number ul {
+    padding-top: 20px;
+}
+
+    .number ul li {
+        float: left;
+        padding: 5px 10px;
+        background-color: #fb592a;
+        margin: 0;
+        border-radius: 0px;
+        min-height: 55px;
+    }
+
+        .number ul li p {
+            /*font-size: 32px;
+            margin: 0 10px;
+            background-color: #fb592a;
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;*/
+            margin: 0;
+            width: 32px;
+            font-size: 32px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+.login-title h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.login-title h3 {
+    margin: 0;
+}
+
+    .login-title h3 img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+.login-box {
+    margin-top: 50px;
+}
+
+    .login-box .form-control {
+        width: 250px;
+        border: 2px solid #ec1414;
+        border-radius: 10px 4px 4px 4px;
+        height: 40px;
+    }
+
+    .login-box section {
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    .login-box .btn {
+        padding: 10px 50px;
+        border-radius: 10px 4px 4px 4px;
+        background-color: #cd0000;
+        border: 2px solid #ec1414;
+        color: white;
+        font-weight: bold;
+    }
+
+@media(max-width:1200px) and (min-width:991px) {
+    nav ul li div {
+        width: 215px;
+    }
+
+    .number ul li p {
+        margin: 0 5px;
+    }
+}
+
+@media(max-width:991px) and (min-width:768px) {
+    nav ul li div {
+        width: 160px;
+    }
+}
+
+@media(max-width:768px)and (min-width:480px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+    }
+
+        .navbar-nav > li {
+            float: none;
+        }
+
+            .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+    .collapse.in {
+        display: block !important;
+    }
+
+    .number ul li p {
+        margin: 0 5px;
+        padding: 5px 10px;
+        font-size: 35px;
+    }
+
+    .btn-spin img {
+        margin-top: 0px;
+    }
+
+    nav ul li div {
+        width: 100%;
+        height: 40px;
+        margin-left: 0px;
+        border-bottom-right-radius: 0px;
+        background: transparent;
+    }
+
+    nav ul li {
+        height: 40px;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+}
+
+.mobile {
+    display: none;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    z-index: 0 !important;
+}
+
+.main-1 {
+    /*background-image: url('../image/Giaitrangsuc.jpg');*/
+    background-repeat: repeat-y;
+    min-height: 1203px;
+    width: 1280px;
+    margin: -20px auto;
+    padding: 150px;
+}
+
+.main-2 {
+    /*background-image: url('../image/Giaituixach.jpg');*/
+    /*background-repeat: repeat-y;*/
+    /*min-height: 1203px;
+    width: 1280px;*/
+    /*margin: -20px auto;*/
+    /*padding: 150px;*/
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.main-3 {
+    /*background-image: url('../image/dienthoai.jpg');*/
+    background-repeat: repeat-y;
+    min-height: 1203px;
+    width: 1280px;
+    margin: -20px auto;
+    padding: 150px;
+}
+
+tbody {
+    background-color: #e8f19b;
+}
+
+nav {
+    overflow: hidden;
+    background: #fab5b5;
+}
+
+    nav ul li {
+        padding: 5px 10px;
+    }
+
+        nav ul li:hover {
+            background-color: antiquewhite;
+        }
+
+        nav ul li a {
+            color: #fb592a;
+        }
+
+            nav ul li a:hover {
+                color: #fb592a;
+            }
+
+body {
+    background: -moz-radial-gradient(center center, circle farthest-corner, #ffffff 0%, #f9a4a4 100%);
+    background: -o-radial-gradient(center center, circle farthest-corner, #ffffff 0%, #f9a4a4 100%);
+    background: -ms-radial-gradient(center center, circle farthest-corner, #ffffff 0%, #f9a4a4 100%);
+    background: -webkit-radial-gradient(center center, circle farthest-corner, #ffffff 0%, #f9a4a4 100%);
+}
+
+.dem {
+    color: white;
+    font-weight: bold;
+}
+
+#tables tbody {
+    background-color: white;
+}
+
+#tables tr td {
+    border-color: transparent;
+    font-weight: 900;
+    font-size: 36px;
+    color: orangered;
+    letter-spacing: 10px;
+    padding: 0;
+}
+
+.modal-title {
+    font-size: 21px;
+    color: red;
+    font-weight: bold;
+}
+
+#dem {
+    color: orangered;
+}

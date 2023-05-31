@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PhanerPieModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="PhanerPieEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DS_QuayThuong" EntityType="PhanerPieModel.DS_QuayThuong" />
+  </EntityContainer>
+  <EntityType Name="DS_QuayThuong">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int64" />
+    <Property Name="Phone" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="Code" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Active" Type="Int32" />
+    <Property Name="PhoneXXX" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="Time" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="Type" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="Duphong" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

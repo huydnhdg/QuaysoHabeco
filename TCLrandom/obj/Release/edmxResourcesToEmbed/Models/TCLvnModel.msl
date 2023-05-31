@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TCLvnModelStoreContainer" CdmEntityContainer="TCLvnEntities">
+    <EntitySetMapping Name="DS_QuayThuong">
+      <EntityTypeMapping TypeName="TCLvnModel.DS_QuayThuong">
+        <MappingFragment StoreEntitySet="DS_QuayThuong">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="PhoneXXX" ColumnName="PhoneXXX" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PhanerPieModelStoreContainer" CdmEntityContainer="PhanerPieEntities">
+    <EntitySetMapping Name="DS_QuayThuong">
+      <EntityTypeMapping TypeName="PhanerPieModel.DS_QuayThuong">
+        <MappingFragment StoreEntitySet="DS_QuayThuong">
+          <ScalarProperty Name="Duphong" ColumnName="Duphong" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="PhoneXXX" ColumnName="PhoneXXX" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

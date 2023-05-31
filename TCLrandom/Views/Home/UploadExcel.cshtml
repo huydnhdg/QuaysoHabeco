@@ -1,0 +1,56 @@
+﻿@model List<TCLrandom.Models.DS_QuayThuong>
+@{
+    ViewBag.Title = "UploadExcel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var index = 0;
+}
+<div class="main container">
+    @using (Html.BeginForm("UploadExcel", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <p style="text-align:center;font-size:32px;" class="text-danger">upload file excel danh sách quay thưởng</p>
+        <div style="margin:100px 100px;line-height:30px;">
+            <input type="file" name="UploadedFile" />
+            <input type="submit" name="Submit" value="Submit" class="btn-success" />
+        </div>
+        <p>@ViewBag.text</p>
+        <p>Đang có @ViewBag.count mã trong database</p>
+
+    }
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">Database</div>
+            <div class="card-body">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Số điện thoại</th>
+                            <th>Mã cào</th>
+
+                            <th>#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            index++;
+                            <tr>
+                                <td>@index</td>
+                                <td>@item.Phone</td>
+                                <td>@item.Code</td>
+
+                                <td>
+                                    @ViewBag.text
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+

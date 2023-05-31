@@ -1,0 +1,84 @@
+﻿@model List<TCLrandom.Models.DS_QuayThuong>
+@{
+    ViewBag.Title = "UploadFile";
+    Layout = "~/Views/Shared/_LayoutTCL.cshtml";
+    var index = 0;
+    var done = 0;
+    var fail = 0;
+}
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">Form</div>
+                <div class="card-body">
+                    @using (Html.BeginForm("UploadFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        <div class="input-group mb-3">
+                            <div class="col-md-8">
+                                <input type="file" name="UploadedFile" class="form-control" />
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-primary"><i class="ti ti-upload"></i> Upload</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">Database</div>
+                <div class="card-body">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+
+                                <th>Mã cào</th>
+                                <th>Số điện thoại</th>
+
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                index++;
+                                <tr>
+                                    <td>@index</td>
+                                    <td>@item.Code</td>
+                                    <td>@item.Phone</td>
+
+                                    <td>
+                                        @if (item.Id == 0)
+                                        {
+                                            <span class="text-danger">@item.Code</span>
+                                            fail++;
+                                        }
+                                        else
+                                        {
+                                            <span class="text-success">thành công</span>
+                                            done++;
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
